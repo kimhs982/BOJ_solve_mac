@@ -22,7 +22,7 @@ int main()
 
 int fib(int in_n)
 {
-    if(in_n == 1 || in_n == 2)
+    if (in_n == 1 || in_n == 2)
     {
         cnt_recursive++;
         return 1;
@@ -36,7 +36,7 @@ int fibonacci(int in_n)
     unique_ptr<int[]> F(new int[in_n]);
 
     F[0] = F[1] = 1;
-    for(int i = 2; i < in_n; i++)
+    for (int i = 2; i < in_n; i++)
     {
         cnt_DP++;
         F[i] = F[i - 1] + F[i - 2];
