@@ -32,11 +32,9 @@ void NandM(int in_N, int in_M, int height)
         cout << '\n';
     }
     else
-    {
         for (int i = (height - 1 < 0 ? 0 : num_arr[height - 1]); i < in_N; i++)
         {
             num_arr[height] = i + 1;
             NandM(in_N, in_M, height + 1);
         }
-    }
 }
