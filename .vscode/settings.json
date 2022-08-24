@@ -1,5 +1,7 @@
 {
-    "files.associations": {
-        "ios": "cpp"
-    }
+  "files.associations": {
+    "ios": "cpp",
+    "memory": "cpp",
+    "utility": "cpp"
+  }
 }
