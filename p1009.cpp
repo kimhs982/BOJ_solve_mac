@@ -103,10 +103,10 @@ int last_handled_computer1(int in_a, int in_b)
 int last_handled_computer2(int in_a, int in_b)
 {
     int temp = 1;
-    for(int i = 0; i < in_b; i++)
+    for (int i = 0; i < in_b; i++)
         temp = temp * in_a % 10;
 
-    if(temp == 0)
+    if (temp == 0)
         return 10;
     else
         return temp;
