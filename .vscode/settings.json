@@ -4,6 +4,9 @@
     "memory": "cpp",
     "utility": "cpp",
     "iostream": "cpp",
-    "istream": "cpp"
+    "istream": "cpp",
+    "optional": "cpp",
+    "unordered_map": "cpp",
+    "variant": "cpp"
   }
 }
