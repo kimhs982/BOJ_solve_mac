@@ -1,8 +1,9 @@
 {
+    "version": "2.0.0",
     "configurations": [
         {
-            "name": "C/C++: clang++ 활성 파일 빌드 및 디버그",
-            "type": "cppdbg",
+            "name": "clang++ - Build and debug active file",
+            "type": "lldb",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [],
@@ -11,8 +12,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "C/C++: clang++ 활성 파일 빌드"
+            "preLaunchTask": "C/C++: clang++ build active file",
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

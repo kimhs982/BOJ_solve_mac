@@ -27,7 +27,7 @@ int main()
     {
         int temp;
         cin >> temp;
-        studentsGrade.__emplace_back(temp);
+        studentsGrade.emplace_back(temp);
     }
     cout << cutLine(studentsGrade, k) << '\n';
 

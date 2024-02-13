@@ -33,7 +33,7 @@ int main()
 
     // 최빈값
     int max_count = 0;
-    vector<pair<int, int> > arr_freq;
+    vector<pair<int, int>> arr_freq;
     for (int i = 0; i < N;)
     {
         int count = 1, j;
@@ -42,7 +42,7 @@ int main()
                 count++;
             else
                 break;
-        arr_freq.__emplace_back(make_pair(arr[i], count));
+        arr_freq.emplace_back(make_pair(arr[i], count));
         i = j;
         if (max_count < count)
             max_count = count;
@@ -51,7 +51,7 @@ int main()
     vector<int> max_freq;
     for (int i = 0; i < int(arr_freq.size()); i++)
         if (arr_freq[i].second == max_count)
-            max_freq.__emplace_back(arr_freq[i].first);
+            max_freq.emplace_back(arr_freq[i].first);
 
     if (max_freq.size() > 1)
         mode = max_freq[1];
